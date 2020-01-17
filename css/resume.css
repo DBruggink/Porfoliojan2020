@@ -28,6 +28,7 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: black;
+  text-shadow: -1px -1px 0 rgb(10, 68, 10), 1px -1px 0 rgb(10, 68, 10), -1px 2px 0 rgb(10, 68, 10), 1px 1px 0 rgb(10, 68, 10);
 }
 
 h1 {
@@ -74,7 +75,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color:black;
 }
 
 .dev-icons {
@@ -82,12 +83,13 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: rgb(10, 68, 10);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   text-transform: uppercase;
+  color:white;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -149,7 +151,8 @@ section.resume-section .resume-item .resume-date {
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
-    color: grey;
+    color: rgb(10, 68, 10);
+    font-weight: 200;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
@@ -166,10 +169,17 @@ section.resume-section .resume-item .resume-date {
 
 .bg-primary {
   background-color: rgb(10, 68, 10) !important;
+  background:
+  radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 7px, black 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+  radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 7px, black 10px, rgba(96, 16, 48, 0) 11px),
+  rgb(10, 68, 10);
+  
+background-size: 20px 20px;
 }
 
 .text-primary {
   color: rgb(10, 68, 10) !important;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 a {
@@ -183,4 +193,18 @@ a:hover, a:focus, a:active {
 #takeoff{
   margin-top: -50px;
   margin-left: 50;
+}
+
+.text-secondary{
+  color: rgb(10, 68, 10) !important;
+  font-weight: 200;
+}
+.fa-award{
+  color: goldenrod;
+  
+}
+
+.fa-medal{
+  color: grey;
+  margin-left: -4px;
 }
